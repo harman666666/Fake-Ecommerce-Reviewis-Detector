@@ -1,0 +1,7 @@
+spacy
+torch
+torchtext
+seaborn
+pandas
+numpy
+
