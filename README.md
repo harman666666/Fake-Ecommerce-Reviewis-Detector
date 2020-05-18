@@ -39,14 +39,14 @@ Some of the limitations were addressed by feeding in the number of capital lette
 
 The following confusion matrix on a class-balanced test set shows that there is a considerable number of false positives and false negatives, and that the model is better at identifying fake reviews versus identifying real reviews. Additionally, the LSTM has more false negatives than false positives. This is inline with the measured precision and recall which are 0.7 and 0.659 respectively, indicating that the LSTM rarely assigns a sample as real (reducing false positives), and if it does, it is precise and the sample is likely real, however, due to this behaviour, the recall suffers because the LSTM is missing many positive cases. 
 
+
+![Image description](https://github.com/harman666666/Fake-Ecommerce-Reviews-Detector/blob/master/LSTMConfusionMatrix.png)
+
 Figure 11: Confusion Matrix for Real and Fake Reviews using LSTM
 In the report below, one can see that the recall is greater than the precision if one considers fake reviews as the positive, which makes sense since the LSTM is usually assigning samples negative (since it rarely assigns positive), reducing the precision, and increasing the recall for fake reviews. 
 
 Figure 12: Classification Results for Real and Fake Reviews using LSTM
-
-
-
-
+![Image description](https://github.com/harman666666/Fake-Ecommerce-Reviews-Detector/blob/master/classification_results.png)
 
 
 
